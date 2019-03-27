@@ -1,8 +1,11 @@
 import React from 'react';
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import LogoSvg from './images/logo.svg';
-import { Link, animateScroll as scroll } from 'react-scroll'
-
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { BrowserRouter as Router, NavLink as RouterLink, Route } from "react-router-dom";
+import Home from './Home'
+import Projects from './Projects';
+import Join from './Join';
 
 export default class Header extends React.Component {
     scrollToTop = () => {
@@ -11,9 +14,10 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <div>
+            <Router>
+            <React.Fragment>
                 <Navbar color="faded" fixed="top" light expand="md">
-                    <NavbarBrand href="#top"  onClick={this.scrollToTop}>
+                    <NavbarBrand tag={RouterLink} to="/"  onClick={this.scrollToTop}>
                         <img src={LogoSvg} height="50px"/>
                     </NavbarBrand>
                     <Nav navbar>
@@ -25,7 +29,7 @@ export default class Header extends React.Component {
                                 smooth={true}
                                 offset={-70}
                                 duration= {500}>
-                                <NavLink style={{fontWeight: "bold"}}>
+                                <NavLink tag={RouterLink} to="/" style={{fontWeight: "bold"}}>
                                     Notre Mission
                                 </NavLink>
                             </Link>
@@ -41,8 +45,9 @@ export default class Header extends React.Component {
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
-                                    duration= {500}>
-                                    <DropdownItem>
+                                    duration= {500}
+                                    >
+                                    <DropdownItem to="/nos-projets" onClick={this.scrollToTop}  tag={RouterLink}>
                                     Le confessional
                                     </DropdownItem>
                                     </Link>
@@ -56,7 +61,7 @@ export default class Header extends React.Component {
                                 smooth={true}
                                 offset={-70}
                                 duration= {500}>
-                                <NavLink style={{fontWeight: "bold"}}>
+                                <NavLink tag={RouterLink} to="/" style={{fontWeight: "bold"}}>
                                     Notre Équipe
                                 </NavLink>
                             </Link>
@@ -64,21 +69,28 @@ export default class Header extends React.Component {
                     </Nav>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <Link
-                                activeClass="active"
-                                to="footer"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration= {500}>
-                                <NavLink style={{fontWeight: "bold"}}>
+                                <NavLink to="/nous-joindre" onClick={this.scrollToTop} tag={RouterLink} style={{fontWeight: "bold"}}>
                                     Nous Joindre
                                 </NavLink> 
-                            </Link>
                         </NavItem>
                     </Nav>
                 </Navbar>
-            </div>
+            <Route
+              path="/"
+              exact={true}
+              component={Home}
+            />
+            <Route
+                path="/nos-projets"
+                component={Projects}
+                exact={true}
+              />
+              <Route
+                path="/nous-joindre"
+                component={Join}
+              />
+            </React.Fragment>
+            </Router>
         )
     }
 }
