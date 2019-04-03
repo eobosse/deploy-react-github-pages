@@ -18,6 +18,8 @@
     "reactstrap": "^7.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +36,6 @@
   ],
   "devDependencies": {
     "@material-ui/core": "^3.9.2"
-  }
+  },
+  "homepage": "https://eobosse.github.io/deploy-react-github-pages"
 }
