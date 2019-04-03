@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import LogoSvg from '../images/logo.svg';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import { HashRouter as Router, NavLink as RouterLink, Route } from "react-router-dom";
+import { NavLink as RouterLink, Route } from "react-router-dom";
 import  { Home, Projects, Join } from '../pages'
 
 export default class Header extends React.Component {
@@ -26,7 +26,6 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <Router>
             <React.Fragment>
                 <Navbar color="faded" fixed="top" light expand="md">
                     <NavbarBrand tag={RouterLink} to="/"  onClick={this.scrollToTop}>
@@ -95,7 +94,6 @@ export default class Header extends React.Component {
                 component={Join}
               />
             </React.Fragment>
-            </Router>
         );
     }
 }
