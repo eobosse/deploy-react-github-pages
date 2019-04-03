@@ -16,23 +16,23 @@ self.__precacheManifest = [
     "url": "/deploy-react-github-pages/static/js/runtime~main.f5089d83.js"
   },
   {
-    "revision": "d17fa7a1f0af6b4cff8c",
-    "url": "/deploy-react-github-pages/static/js/main.da876b8a.chunk.js"
+    "revision": "8dbca379a9af7339c097",
+    "url": "/deploy-react-github-pages/static/js/main.94cc3682.chunk.js"
   },
   {
-    "revision": "029ae7b80707f317c909",
-    "url": "/deploy-react-github-pages/static/js/2.292de8b7.chunk.js"
+    "revision": "e7290d9ffe5ba6d28746",
+    "url": "/deploy-react-github-pages/static/js/2.ff49614a.chunk.js"
   },
   {
-    "revision": "d17fa7a1f0af6b4cff8c",
+    "revision": "8dbca379a9af7339c097",
     "url": "/deploy-react-github-pages/static/css/main.6f213079.chunk.css"
   },
   {
-    "revision": "029ae7b80707f317c909",
+    "revision": "e7290d9ffe5ba6d28746",
     "url": "/deploy-react-github-pages/static/css/2.3a07aeb5.chunk.css"
   },
   {
-    "revision": "9211450a96a6541902c205dc01e647cc",
+    "revision": "ae991d1b5bf78448e16d60165d2f2ca1",
     "url": "/deploy-react-github-pages/index.html"
   }
 ];
