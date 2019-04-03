@@ -32,9 +32,8 @@ export default class Header extends React.Component {
                     <NavbarBrand tag={RouterLink} to="/"  onClick={this.scrollToTop}>
                         <img src={LogoSvg} height="50px" alt={""}/>
                     </NavbarBrand>
-                    <Nav navbar>
-                        <NavItem>
-                            <Link
+                    <Nav navbar >
+                    <Link
                                 activeClass="active"
                                 to="mission"
                                 spy={true}
@@ -42,11 +41,13 @@ export default class Header extends React.Component {
                                 offset={-70}
                                 duration= {500}
                                 >
+                        <NavItem>
+                            
                                 <NavLink tag={RouterLink} to="/" style={{fontWeight: "bold"}}>
                                     Notre Mission
                                 </NavLink>
-                            </Link>
                         </NavItem>
+                        </Link>
                         <NavItem>
                             <Link
                                 activeClass="active"
