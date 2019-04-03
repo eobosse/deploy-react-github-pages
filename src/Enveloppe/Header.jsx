@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import LogoSvg from '../images/logo.svg';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import { BrowserRouter as Router, NavLink as RouterLink, Route } from "react-router-dom";
+import { HashRouter as Router, NavLink as RouterLink, Route } from "react-router-dom";
 import  { Home, Projects, Join } from '../pages'
 
 export default class Header extends React.Component {
