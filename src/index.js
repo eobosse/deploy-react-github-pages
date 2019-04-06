@@ -4,11 +4,11 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import "antd/dist/antd.css";
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App'; 
 
 ReactDOM.render(
-<Router>
+<Router basename={process.env.PUBLIC_URL}>>
     <App />
 </Router>
 , document.getElementById('root'));
