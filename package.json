@@ -1,7 +1,7 @@
 {
   "name": "webtpv",
   "version": "0.1.0",
-  "homepage": "https://eobosse.github.io/deploy-react-github-pages",
+  "homepage": "https://eobosse.github.io",
   "private": true,
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
