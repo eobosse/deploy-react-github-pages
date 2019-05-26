@@ -1,12 +1,14 @@
 import React from 'react';
-import  { Section } from '../Components';
-import LoremIpsum from '../texts/loremipsum';
+import  { Section, Form } from '../Components';
 import '../main.css';
 
 export default class Projects extends React.Component {
       render() {
           return (
-            <Section title="Nous Joindre" subtitle={LoremIpsum}/>
+            <React.Fragment>
+              <Section title="Nous Joindre"/>
+              <Form/>
+            </React.Fragment>
           )
       }
 }

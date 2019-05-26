@@ -1,7 +1,13 @@
 import React from 'react';
 import  { Section } from '../Components';
-import LoremIpsum from '../texts/loremipsum';
+import Emilie from '../images/EmilieBosse.jpg';
+import Alexandra from '../images/AlexandraFontaine.jpg';
+import EricOlivier from '../images/ericolivierbosse.jpg';
+import Mission from '../texts/mission';
+import TextEmilie from '../texts/texteEmilie';
+import TextAlexandra from '../texts/texteAlexandra';
 import '../main.css';
+import Person from '../Components/Person';
 
 export default class Home extends React.Component {
 
@@ -16,8 +22,11 @@ export default class Home extends React.Component {
       render() {
         return (
           <div>
-            <Section id="mission" title="Notre Mission" section="mission" subtitle={LoremIpsum}/>
-            <Section id="equipe" title="Notre Équipe" section="equipe" subtitle={LoremIpsum}/>
+            <Section id="mission" title="Notre Mission" section="mission" subtitle={Mission}/>
+            <Section id="equipe" title="Notre Équipe" section="equipe" />
+            <Person title="Presidente, Productrice, auteure et interprète " name="Émilie Bossé" imagePath={Emilie} description={TextEmilie}/>
+            <Person title="Secretaire, productrice et interprète " name="Alexandra Fontaine" imagePath={Alexandra} description={TextAlexandra}/>
+            <Person title="Developpeur web et Tresorier " name="Éric-Olivier Bossé" imagePath={EricOlivier} description={TextEmilie}/>
           </div>
         )
       }
