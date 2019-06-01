@@ -25,15 +25,16 @@
 
 .parallax {
   /* The image used */
-  background-image: url("./images/test.jpg");
-  background-size: 55vw auto;
+  background-image: url("./images/summary.jpg");
+  background-size: 100vw auto;
   /* Set a specific height */
-  min-height: 24.3vw; 
+  min-height: 28vw; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
  
- 
+  background-repeat: no-repeat;
+  
 }
 
 @keyframes App-logo-spin {
