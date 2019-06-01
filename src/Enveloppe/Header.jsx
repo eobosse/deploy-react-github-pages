@@ -65,8 +65,8 @@ export default class Header extends React.Component {
                                 Nos Projets
                             </DropdownToggle>
                             <DropdownMenu right>
-                                    <DropdownItem to="/nos-projets" onClick={() => this.selectProject("confessional")}  tag={RouterLink}>
-                                    Le confessional
+                                    <DropdownItem to="/nos-projets" onClick={() => this.selectProject("confessionnal")}  tag={RouterLink}>
+                                    Le confessionnal
                                     </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>

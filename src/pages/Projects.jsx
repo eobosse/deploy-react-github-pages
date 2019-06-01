@@ -1,6 +1,10 @@
 import React from 'react';
 import { Section } from '../Components';
-import LoremIpsum from '../texts/loremipsum';
+import Confessionnal from '../texts/confessionnal';
+import Description from '../texts/description';
+import Synopsis from '../texts/synopsis';
+import Themes from '../texts/themes';
+import Commentaires from '../texts/commentaires';
 import '../main.css';
 
 export default class Projects extends React.Component {
@@ -10,8 +14,20 @@ export default class Projects extends React.Component {
 
       render() {
           return (
-            this.props.projectName === "confessional" ? 
-              <Section id="confessional" title="Le confessional" section="confessional" subtitle={LoremIpsum}/> : <div/>
+            this.props.projectName === "confessionnal" ? 
+            <React.Fragment>
+              <Section id="confessionnal" section="confessionnal" subtitle={Confessionnal}/>
+              <div className="info">
+                <Section id="Synopsis" title="Synopsis"  subtitle={Synopsis}/>
+                <Section id="Themes" title="Themes"  subtitle={Themes}/>
+                <Section id="Description" title="Description"  subtitle={Description}/>
+              </div>
+
+              <div className="info">
+                <Section id="cqep" title="Ce qu'ils en pensent"  subtitle={Commentaires}/>
+              </div>
+            </React.Fragment>
+               : <div/>
           )
       }
 }
