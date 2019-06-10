@@ -9,14 +9,14 @@ export default class Footer extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div  style={{height: "75px"}} id="footer">
+                <div  style={{height: "8vh"}} id="footer">
                     <Divider>
                         <img src={LogoSvg} height="50px" alt={""}/>
                     </Divider>
                 </div>
-                <div style={{paddingLeft: "137px"}}>
+                <div style={{paddingLeft: "7.2vw"}}>
                     <Container>
-                        <Row style={{height: "50px"}}>
+                        <Row style={{height: "5vh"}}>
                             <Col xs="3" />
                             <Col xs="2" >
                                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" color="#000-000">
@@ -35,14 +35,14 @@ export default class Footer extends React.Component {
                             </Col>
                             <Col xs="3"/>            
                         </Row>
-                        <Row style={{paddingLeft: "65px", height: "40px"}}>
+                        <Row style={{paddingLeft: "3.5vw", height: "5vh"}}>
                             <Col sm={{ size: 'auto', offset: 4 }}>
                                 <div style={{fontSize: "16px", fontWeight: "bold"}}>
                                     Nos partenaires
                                 </div>
                             </Col>
                         </Row>
-                        <Row style={{paddingLeft: "10px", height: "75px"}}>
+                        <Row style={{paddingLeft: "1vw", height: "8vh"}}>
                             <Col sm={{ size: 'auto', offset: 4 }}>
                                 <a href="https://www.teljeunes.com/Accueil"  target="_blank" rel="noopener noreferrer">
                                     <img src={TJLogo} height="30px" alt={""}/>
