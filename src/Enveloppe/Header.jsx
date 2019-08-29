@@ -89,7 +89,7 @@ export default class Header extends React.Component {
                     </Nav>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                                <NavLink to="/nous-joindre" tag={RouterLink} onClick={this.scrollToTop} style={{fontWeight: "bold", color: "black"}} onClick={() => this.selectProject("join")}>
+                                <NavLink to="/nous-joindre" tag={RouterLink} onClick={() =>this.scrollToTop} style={{fontWeight: "bold", color: "black"}} onClick={() => this.selectProject("join")}>
                                     Nous Joindre
                                 </NavLink> 
                         </NavItem>

@@ -28,9 +28,9 @@ export default class Home extends React.Component {
             </div>
             <div className="info">
             <Section id="equipe" title="Notre Équipe" section="equipe" />
-            <Person title="Presidente, Productrice, auteure et interprète " name="Émilie Bossé" imagePath={Emilie} description={TextEmilie}/>
-            <Person title="Secretaire, productrice et interprète " name="Alexandra Fontaine" imagePath={Alexandra} description={TextAlexandra}/>
-            <Person title="Developpeur web et Tresorier " name="Éric-Olivier Bossé" imagePath={EricOlivier} description={TextEricOlivier}/>
+            <Person title="Présidente, Productrice, auteure et interprète " name="Émilie Bossé" imagePath={Emilie} description={TextEmilie}/>
+            <Person title="Secrétaire, productrice et interprète " name="Alexandra Fontaine" imagePath={Alexandra} description={TextAlexandra}/>
+            <Person title="Développeur web et Trésorier " name="Éric-Olivier Bossé" imagePath={EricOlivier} description={TextEricOlivier}/>
             </div>
 
             
