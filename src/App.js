@@ -6,10 +6,10 @@ export default class App extends React.Component {
 
   render() {
     return (
-        <React.Fragment>
+        <div  className="testtest" >
         <Header/>
         <Footer/>
-      </React.Fragment>
+      </div>
     );
   }
 }
