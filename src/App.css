@@ -46,6 +46,10 @@
   }
 }
 
-.testtest {
-  background-image: url("./images/allo.jpg");
+.textureconfessionnal {
+  background-image: url("./images/texture9.jpg");
+}
+
+.texturedefault {
+  background-image: url("./images/texture2.jpg");
 }

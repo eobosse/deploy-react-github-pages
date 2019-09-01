@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import LogoSvg from '../images/logo.svg';
-import Logotpv from '../images/logotpv.jpg';
+import Logotpv from '../images/logotpv.png';
 import LogoConfessionnal from '../images/summary.jpg';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { NavLink as RouterLink, Route } from "react-router-dom";
@@ -44,7 +44,7 @@ export default class Header extends React.Component {
             <React.Fragment>
                 <Parallax image={this.selectImage(this.state.projectName)}/>
                 <Navbar color="faded" fixed="top" light expand="md">
-                    <NavbarBrand tag={RouterLink} to="/"  onClick={this.scrollToTop}>
+                    <NavbarBrand tag={RouterLink} to="/"  onClick={this.scrollToTop} onClick={() => {this.selectProject("home"); this.props.selectBackground("texturedefault");}}>
                         <img src={LogoSvg} height="50px" alt={""}/>
                     </NavbarBrand>
                     <Nav navbar>
@@ -58,7 +58,7 @@ export default class Header extends React.Component {
                                 >
                         <NavItem >
                             
-                                <NavLink tag={RouterLink} to="/" style={{fontWeight: "bold", color: "black"}} onClick={() => this.selectProject("home")}>
+                                <NavLink tag={RouterLink} to="/" style={{fontWeight: "bold", color: "black"}} onClick={() => {this.selectProject("home"); this.props.selectBackground("texturedefault");}}>
                                     Notre Mission
                                 </NavLink>
                         </NavItem>
@@ -71,7 +71,7 @@ export default class Header extends React.Component {
                                 smooth={true}
                                 offset={-70}
                                 duration= {500}>
-                                <NavLink tag={RouterLink} to="/" style={{fontWeight: "bold", color: "black"}} onClick={() => this.selectProject("home")}>
+                                <NavLink tag={RouterLink} to="/" style={{fontWeight: "bold", color: "black"}} onClick={() => {this.selectProject("home"); this.props.selectBackground("texturedefault");}}>
                                     Notre Équipe
                                 </NavLink>
                             </Link>
@@ -81,7 +81,7 @@ export default class Header extends React.Component {
                                 Nos Projets
                             </DropdownToggle>
                             <DropdownMenu right>
-                                    <DropdownItem to="/nos-projets" onClick={() => this.selectProject("confessionnal")}  tag={RouterLink}>
+                                    <DropdownItem to="/nos-projets" onClick={() => {this.selectProject("confessionnal"); this.props.selectBackground("textureconfessionnal");}}  tag={RouterLink}>
                                     Le confessionnal
                                     </DropdownItem>
                             </DropdownMenu>
@@ -89,7 +89,7 @@ export default class Header extends React.Component {
                     </Nav>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                                <NavLink to="/nous-joindre" tag={RouterLink} onClick={() =>this.scrollToTop} style={{fontWeight: "bold", color: "black"}} onClick={() => this.selectProject("join")}>
+                                <NavLink to="/nous-joindre" tag={RouterLink} onClick={() =>this.scrollToTop} style={{fontWeight: "bold", color: "black"}} onClick={() => {this.selectProject("join"); this.props.selectBackground("texturedefault");}}>
                                     Nous Joindre
                                 </NavLink> 
                         </NavItem>

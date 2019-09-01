@@ -19,7 +19,7 @@ export default class Footer extends React.Component {
                         <Row style={{height: "5vh"}}>
                             <Col xs="3" />
                             <Col xs="2" >
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" color="#000-000">
+                                <a href="https://www.facebook.com/theatrepointvirgule/" target="_blank" rel="noopener noreferrer" color="#000-000">
                                     <Icon type="facebook" style={{ fontSize: '24px', color: 'black'}}/>
                                 </a>
                             </Col>

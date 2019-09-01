@@ -1,58 +1,55 @@
 import React from 'react';
-import { Col, Row, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 export default class Join extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      clickedText: 'Envoyer'
+    }
+  }
+
+  handleClick = () => {
+    document.getElementById("gform").reset();
+    this.setState({ clickedText: "Votre message a été envoyé" });
+};
+
   render() {
     return (
-      <Form className="section-content">
+      <React.Fragment>
+      <Form className="section-content" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeNajhbozOb9Wfyz8NXTu5EQ59lVWUAwUpzmNH6yU8WghuwTw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
         <Row form>
           <Col md={6}>
             <FormGroup>
-              <Label for="exampleEmail">Email</Label>
-              <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+              <Label for="nom">Prénom</Label>
+              <Input type="text" name="entry.77058004" id="entry.77058004" />
             </FormGroup>
           </Col>
           <Col md={6}>
             <FormGroup>
-              <Label for="examplePassword">Password</Label>
-              <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+              <Label for="surname">Nom</Label>
+              <Input type="text" name="entry.861984092" id="entry.861984092" />
             </FormGroup>
           </Col>
         </Row>
         <FormGroup>
-          <Label for="exampleAddress">Address</Label>
-          <Input type="text" name="address" id="exampleAddress" placeholder="1234 Main St"/>
+          <Label for="email">Email</Label>
+          <Input type="email" name="entry.332990127" id="entry.332990127"/>
         </FormGroup>
+
+            <FormGroup>
+              <Label for="ecole">École ou Organisme</Label>
+              <Input type="text" name="entry.1566275580" id="entry.1566275580"/>
+            </FormGroup>
         <FormGroup>
-          <Label for="exampleAddress2">Address 2</Label>
-          <Input type="text" name="address2" id="exampleAddress2" placeholder="Apartment, studio, or floor"/>
+          <Label for="message">Message</Label>
+          <Input type="textarea" name="entry.1175472559" id="entry.1175472559" />
         </FormGroup>
-        <Row form>
-          <Col md={6}>
-            <FormGroup>
-              <Label for="exampleCity">City</Label>
-              <Input type="text" name="city" id="exampleCity"/>
-            </FormGroup>
-          </Col>
-          <Col md={4}>
-            <FormGroup>
-              <Label for="exampleState">State</Label>
-              <Input type="text" name="state" id="exampleState"/>
-            </FormGroup>
-          </Col>
-          <Col md={2}>
-            <FormGroup>
-              <Label for="exampleZip">Zip</Label>
-              <Input type="text" name="zip" id="exampleZip"/>
-            </FormGroup>  
-          </Col>
-        </Row>
-        <FormGroup check>
-          <Input type="checkbox" name="check" id="exampleCheck"/>
-          <Label for="exampleCheck" check>Check me out</Label>
-        </FormGroup>
-        <Button>Sign in</Button>
+        <Button type="submit" value="Submit" onClick={() => this.handleClick()}>{this.state.clickedText}</Button>
       </Form>
+      <div dangerouslySetInnerHTML={{__html: '<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>'}}/>
+      </React.Fragment>
     );
   }
 }
