@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3cbff98251f310dbfc3b61e0211509ae",
-    "url": "/static/media/logotpv.3cbff982.jpg"
+    "revision": "3e4b01e9e2c2b471f49e9e1288a65c0d",
+    "url": "/static/media/logotpv.3e4b01e9.png"
   },
   {
-    "revision": "9c36237758a28d938941",
-    "url": "/static/css/main.4188addf.chunk.css"
+    "revision": "023e357bc4bc8908b999",
+    "url": "/static/css/main.fc8d1cb0.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -13,11 +13,11 @@ self.__precacheManifest = [
   },
   {
     "revision": "044a0322353fd46b0538797a496a4567",
-    "url": "/static/media/allo.044a0322.jpg"
+    "url": "/static/media/texture2.044a0322.jpg"
   },
   {
-    "revision": "011642f57be48467f241",
-    "url": "/static/js/2.e40708de.chunk.js"
+    "revision": "e2f945757e54a1b5881e",
+    "url": "/static/js/2.5e0f445e.chunk.js"
   },
   {
     "revision": "8aa338c7da562973cd89525a882683ea",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/TJ_logo.87bb98fa.svg"
   },
   {
-    "revision": "9c36237758a28d938941",
-    "url": "/static/js/main.abaf4495.chunk.js"
+    "revision": "023e357bc4bc8908b999",
+    "url": "/static/js/main.6569fe72.chunk.js"
   },
   {
     "revision": "5d34dcef4b995b06fe9b7572485142b8",
@@ -48,11 +48,15 @@ self.__precacheManifest = [
     "url": "/static/media/ericolivierbosse.457631fd.jpg"
   },
   {
-    "revision": "011642f57be48467f241",
+    "revision": "9d0f93068eb7c4c952deb00d30e1a7cf",
+    "url": "/static/media/texture9.9d0f9306.jpg"
+  },
+  {
+    "revision": "e2f945757e54a1b5881e",
     "url": "/static/css/2.78058a57.chunk.css"
   },
   {
-    "revision": "670ba27ba1e8f1001645e4f29ecf6609",
+    "revision": "9415c509d91ded0e2f93fb6cb45440b4",
     "url": "/index.html"
   }
 ];
