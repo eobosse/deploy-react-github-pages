@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/logotpv.3e4b01e9.png"
   },
   {
-    "revision": "7da538d10ce68a7d975a",
+    "revision": "8abf235dea36022994e1",
     "url": "/static/css/main.fc8d1cb0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/media/texture2.044a0322.jpg"
   },
   {
-    "revision": "fad51030b13aecd015a3",
-    "url": "/static/js/2.85b79001.chunk.js"
+    "revision": "25bfd7dec43077a3c524",
+    "url": "/static/js/2.26d56e2b.chunk.js"
   },
   {
     "revision": "8aa338c7da562973cd89525a882683ea",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/TJ_logo.87bb98fa.svg"
   },
   {
-    "revision": "7da538d10ce68a7d975a",
-    "url": "/static/js/main.8cba5371.chunk.js"
+    "revision": "8abf235dea36022994e1",
+    "url": "/static/js/main.98995fba.chunk.js"
   },
   {
     "revision": "5d34dcef4b995b06fe9b7572485142b8",
@@ -52,11 +52,11 @@ self.__precacheManifest = [
     "url": "/static/media/texture9.9d0f9306.jpg"
   },
   {
-    "revision": "fad51030b13aecd015a3",
+    "revision": "25bfd7dec43077a3c524",
     "url": "/static/css/2.78058a57.chunk.css"
   },
   {
-    "revision": "e9a9d104a3c94ddd0b2059c023233b47",
+    "revision": "4195e0f2c804b7d1090d4920919fcfe8",
     "url": "/index.html"
   }
 ];
