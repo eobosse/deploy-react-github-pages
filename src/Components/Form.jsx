@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { watchFile } from 'fs';
 
 export default class Join extends React.Component {
 
@@ -11,14 +12,16 @@ export default class Join extends React.Component {
   }
 
   handleClick = () => {
-    document.getElementById("gform").reset();
-    this.setState({ clickedText: "Votre message a été envoyé" });
+    setTimeout(function(){
+      document.getElementById("gform").reset();
+  }, 200);
+  this.setState({ clickedText: "Votre message a été envoyé" });
 };
 
   render() {
     return (
       <React.Fragment>
-      <Form className="section-content" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeNajhbozOb9Wfyz8NXTu5EQ59lVWUAwUpzmNH6yU8WghuwTw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+      <Form className="section-content" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeNajhbozOb9Wfyz8NXTu5EQ59lVWUAwUpzmNH6yU8WghuwTw/formResponse?" target="hidden_iframe" >
         <Row form>
           <Col md={6}>
             <FormGroup>
@@ -35,7 +38,7 @@ export default class Join extends React.Component {
         </Row>
         <FormGroup>
           <Label for="email">Email</Label>
-          <Input type="email" name="entry.332990127" id="entry.332990127"/>
+          <Input type="text" name="entry.332990127" id="entry.332990127"/>
         </FormGroup>
 
             <FormGroup>
@@ -48,7 +51,7 @@ export default class Join extends React.Component {
         </FormGroup>
         <Button type="submit" value="Submit" onClick={() => this.handleClick()}>{this.state.clickedText}</Button>
       </Form>
-      <div dangerouslySetInnerHTML={{__html: '<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>'}}/>
+      <div dangerouslySetInnerHTML={{__html: '<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(true) {}"></iframe>'}}/>
       </React.Fragment>
     );
   }

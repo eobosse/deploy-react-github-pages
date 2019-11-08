@@ -24,7 +24,7 @@ export default class Projects extends React.Component {
               </div>
 
               <div className="info">
-                <Section id="cqep" title="Ce qu'ils en pensent"  subtitle={Commentaires} credit={"-Nicole Longchamps, psychologue de l’École secondaire Polybel"}/>
+                <Section id="cqep" title="Ce qu'ils en pensent"  subtitle={"«Aborder les thématiques qui préoccupent les adolescents de manière humoristique : mission accomplie!»"} citation={"«Nous avons eu beaucoup de plaisir à lire la pièce et nous en aurons tout autant à la voir sur scène!»"} credit={"-Des intervenants de Tel-jeunes"} citation2={Commentaires} credit2={"-Nicole Longchamps, psychologue de l’École secondaire Polybel"}/>
               </div>
             </React.Fragment>
                : <div/>

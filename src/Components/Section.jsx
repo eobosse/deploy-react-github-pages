@@ -9,6 +9,8 @@ export default class Section extends React.Component {
                     <p>{this.props.subtitle}</p>
                     <p>{this.props.citation}</p>
                     <p>{this.props.credit}</p>
+                    <p>{this.props.citation2}</p>
+                    <p>{this.props.credit2}</p>
                 </div>
             </div>
         )
